@@ -1,0 +1,17 @@
+/* styles.css */
+.container {
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.me-2 {
+  margin-right: 0.5rem !important;
+}
