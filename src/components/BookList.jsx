@@ -3,7 +3,7 @@ import { Table, Button, Card } from 'react-bootstrap';
 
 function BookList({ books, onEdit, onDelete }) {
   return (
-    <Card>
+    <Card className="mb-5 pb-5">
       <Card.Body>
         <Card.Title>Book List</Card.Title>
         {books.length > 0 ? (

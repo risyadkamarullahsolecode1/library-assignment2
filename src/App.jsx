@@ -5,12 +5,14 @@ import BookList from './components/BookList';
 import AddBookForm from './components/AddBookForm';
 import './App.css'
 
+let nextId = 0;
+
 function App() {
   const [books, setBooks] = useState([]);
   const [editingBook, setEditingBook] = useState(null);
 
   const addBook = (book) => {
-    setBooks([...books, { id: Date.now(), ...book }]);
+    setBooks([...books, { ...book,id: nextId++ }]);
   };
 
   const deleteBook = (id) => {
@@ -27,10 +29,10 @@ function App() {
   };
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <Header />
 
-      <h1 className="text-center">Library Management System</h1>
+      <h1 className="text-center mt-5 pt-5">Library Management System</h1>
       <AddBookForm
         handleSubmit={editingBook ? updateBook : addBook}
         editingBook={editingBook}

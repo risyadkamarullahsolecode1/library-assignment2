@@ -3,10 +3,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary py-4 mt-auto">
+    <footer className="bg-primary pt-2 py-3 mt-auto fixed-bottom">
       <Container>
         <Row className="align-items-center justify-content-between flex-column flex-sm-row">
-          <Col className="col-auto text-white small m-0">Copyright &copy; Restaurant Website 2024</Col>
+          <Col className="col-auto text-white small m-0">Copyright &copy; Library Website 2024</Col>
           <Col className="col-auto">
             <a className="text-white small" href="https://www.facebook.com">Facebook</a>
             <span className="text-white mx-1">&middot;</span>
